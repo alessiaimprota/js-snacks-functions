@@ -26,6 +26,5 @@ function checkVowels (wordToCheck, commonVowels, vowels){
 
 // Invoca la funzione qui e stampa il risultato in console
 const vowelsWordLength = checkVowels (word, vowelsInWord, vowels)
-console.log(vowelsWordLength)
- 
+console.log(`"${word}": ${vowelsWordLength} (${vowelsInWord})`)
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
