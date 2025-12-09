@@ -24,7 +24,7 @@ console.log(newArray)
 }*/
 const nameFilterByFirstChar = (oldArray, newArray, commonFirstChar) => {
   for (let i = 0; i < oldArray.length; i++) {
-    if (oldArray[i].charAt(0) === commonFirstChar) {
+    if (oldArray[i].charAt(0).toUpperCase() === commonFirstChar) {
       newArray.push(oldArray[i]);
     }
   }
