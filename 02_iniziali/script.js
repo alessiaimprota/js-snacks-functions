@@ -27,5 +27,4 @@ firstCharItemArray(names, firstLetterNames);
 
 console.log(firstLetterNames);
 
-
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

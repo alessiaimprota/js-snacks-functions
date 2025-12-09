@@ -1,7 +1,7 @@
 /* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
-console.log(names)
+console.log(names);
 const sameLetterNames = [];
 let letter = prompt("Inserisci una lettera");
 
@@ -35,4 +35,3 @@ nameFilterByFirstChar(names, sameLetterNames, letter);
 console.log(sameLetterNames);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
-

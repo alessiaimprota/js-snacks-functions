@@ -2,18 +2,15 @@
 
 const userName = "Mario";
 
-
 // Dichiara la funzione qui.
 
-const helloUser= (name) => `Ciao ${name}`; 
+const helloUser = (name) => `Ciao ${name}`;
 /*function helloUser(name){
  let mess;
  return mess= `Ciao `+name;
 }*/
 
-
 // Invoca la funzione qui e stampa il risultato in console
 
-
 //Risultato atteso se si passa 'Mario': // ciao Mario
-console.log(helloUser(userName))
+console.log(helloUser(userName));
