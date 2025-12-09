@@ -1,6 +1,7 @@
 /* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
+console.log(names)
 const sameLetterNames = [];
 let letter = prompt("Inserisci una lettera").toUpperCase();
 
@@ -21,16 +22,17 @@ if (oldArray[i].charAt(0)===sameFirstCharItem){
 }
 console.log(newArray)
 }*/
-const nameFilterByFirstChar = (oldArray, newArray, sameFirstCharItem) => {
+const nameFilterByFirstChar = (oldArray, newArray, commonFirstChar) => {
   for (let i = 0; i < oldArray.length; i++) {
-    if (oldArray[i].charAt(0) === sameFirstCharItem) {
+    if (oldArray[i].charAt(0) === commonFirstChar) {
       newArray.push(oldArray[i]);
     }
   }
-  console.log(newArray);
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(nameFilterByFirstChar(names, sameLetterNames, letter));
+nameFilterByFirstChar(names, sameLetterNames, letter);
+console.log(sameLetterNames);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+

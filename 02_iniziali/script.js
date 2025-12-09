@@ -19,11 +19,13 @@ const firstCharItemArray = (originalArray, newArray) => {
   for (let i = 0; i < originalArray.length; i++) {
     newArray.push(originalArray[i].charAt(0));
   }
-  console.log(newArray);
 };
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(firstCharItemArray(names, firstLetterNames));
+firstCharItemArray(names, firstLetterNames);
+
+console.log(firstLetterNames);
+
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
