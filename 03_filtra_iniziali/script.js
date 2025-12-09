@@ -3,7 +3,7 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 console.log(names)
 const sameLetterNames = [];
-let letter = prompt("Inserisci una lettera").toUpperCase();
+let letter = prompt("Inserisci una lettera");
 
 /*
 for(let i=0; i<names.length; i++){
@@ -24,7 +24,7 @@ console.log(newArray)
 }*/
 const nameFilterByFirstChar = (oldArray, newArray, commonFirstChar) => {
   for (let i = 0; i < oldArray.length; i++) {
-    if (oldArray[i].charAt(0).toUpperCase() === commonFirstChar) {
+    if (oldArray[i].charAt(0).toLowerCase() === commonFirstChar.toLowerCase()) {
       newArray.push(oldArray[i]);
     }
   }
