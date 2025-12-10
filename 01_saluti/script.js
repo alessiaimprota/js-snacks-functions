@@ -4,7 +4,7 @@ const userName = "Mario";
 
 // Dichiara la funzione qui.
 
-const helloUser = (name) => `Ciao ${name}`;
+const helloUser = name => `Ciao ${name}`;
 /*function helloUser(name){
  let mess;
  return mess= `Ciao `+name;

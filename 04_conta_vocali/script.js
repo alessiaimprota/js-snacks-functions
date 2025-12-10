@@ -16,7 +16,7 @@ const vowelsInWord = [];
 function checkVowels(wordToCheck, commonVowels) {
   const vowels = ["a", "e", "i", "o", "u"];
   for (let i = 0; i < wordToCheck.length; i++) {
-    if (vowels.includes(wordToCheck[i])) {
+    if (vowels.includes((wordToCheck[i]).toLowerCase())) {
       commonVowels.push(wordToCheck[i]);
     }
   }
